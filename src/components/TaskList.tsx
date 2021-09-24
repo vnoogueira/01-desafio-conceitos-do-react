@@ -1,7 +1,5 @@
 import { useState } from 'react'
-
 import '../styles/tasklist.scss'
-
 import { FiTrash, FiCheckSquare } from 'react-icons/fi'
 
 interface Task {
@@ -28,9 +26,7 @@ export function TaskList() {
     //Guardando as informações das task antigas com a mais recente em um array
     setTasks(oldTask => [...oldTask, newTask]);
     //Voltando o campo de input para vazio
-    setNewTaskTitle('');
-    
-    
+    setNewTaskTitle('');   
   }
 
   function handleToggleTaskCompletion(id: number) {
